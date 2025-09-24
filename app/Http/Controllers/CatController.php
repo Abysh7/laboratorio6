@@ -54,6 +54,6 @@ class CatController extends Controller
             return response()->json(['error' => 'Gato no encontrado'], 404);
         }
         DB::delete('DELETE FROM gatos WHERE id = ?', [$id]);
-        return response()->json(['message' => 'Gato eliminado']);
+        return response()->json(['message' => 'Eliminado correctamente']);
     }
 }
